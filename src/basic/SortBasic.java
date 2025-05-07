@@ -13,7 +13,7 @@ public class SortBasic {
             }
         }
 
-        return hashSet.stream().mapToInt(Integer::intValue).toArray();
+        return hashSet.stream().sorted().mapToInt(Integer::intValue).toArray();
     }
 
     public static void main(String[] args) {
