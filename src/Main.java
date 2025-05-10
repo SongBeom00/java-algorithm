@@ -7,15 +7,20 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int capacity = sc.nextInt();
-        int cutLine = sc.nextInt();
-        int[] arr = new int[capacity];
-        for (int i = 0; i <= capacity-1; i++) {
-            int value = sc.nextInt();
-            arr[i] = value;
+
+        int num = sc.nextInt();
+
+        int[] a = new int[num];
+
+        for (int i = 0; i < num; i++) {
+            a[i] = sc.nextInt();
         }
-        Arrays.sort(arr);
-        System.out.println(arr[capacity-cutLine]);
+
+        Arrays.sort(a);
+
+        for(int j : a){
+            System.out.println(j);
+        }
 
     }
 
