@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -7,22 +6,22 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
         int num = sc.nextInt();
-
-        int[] a = new int[num];
-
+        Set<Integer> set = new TreeSet<>();
         for (int i = 0; i < num; i++) {
-            a[i] = sc.nextInt();
+            int value = sc.nextInt();
+            set.add(value);
         }
 
-        Arrays.sort(a);
-
-        for(int j : a){
-            System.out.println(j);
+        for (Integer i : set) {
+            System.out.println(i);
         }
+
 
     }
+
+
+
 
 
 }
